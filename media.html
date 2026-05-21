@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media — Brian A. Jacob</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1a2744;
+    --link: #8b1a1a;
+    --text: #1c1c1c;
+    --muted: #555;
+    --border: #d8d0c4;
+    --bg: #faf8f4;
+    --section-bg: #f3f0ea;
+  }
+  body { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; color: var(--text); background: var(--bg); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav { border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 860px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-name { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+  .page-title { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+  .page-title h1 { font-family: 'EB Garamond', serif; font-size: 2rem; font-weight: 400; color: var(--navy); }
+  .page-title p { font-family: 'Inter', sans-serif; font-size: 0.82rem; color: var(--muted); margin-top: 0.5rem; }
+
+  /* Year group headers */
+  .year-group { margin-top: 2.5rem; }
+  .year-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 0;
+  }
+
+  /* Media entries */
+  .media-list { list-style: none; }
+  .media-entry {
+    padding: 1.1rem 0;
+    border-bottom: 1px solid var(--border);
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 0 1.5rem;
+    align-items: baseline;
+  }
+  .media-outlet {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.74rem;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-top: 0.1rem;
+  }
+  .media-right {}
+  .media-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 1rem;
+    color: var(--navy);
+    line-height: 1.4;
+    font-style: italic;
+  }
+  .media-context {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+  }
+
+  footer { border-top: 1px solid var(--border); margin-top: 4rem; padding: 2rem 0; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.74rem; color: var(--muted); letter-spacing: 0.03em; }
+
+  @media (max-width: 580px) {
+    .media-entry { grid-template-columns: 1fr; gap: 0.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brian A. Jacob</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="media.html" class="active">Media</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+
+  <div class="page-title">
+    <h1>Selected Media Coverage</h1>
+  </div>
+
+  <!-- ══ 2026 ══ -->
+  <div class="year-group">
+    <div class="year-label">2026</div>
+    <ul class="media-list">
+
+      <li class="media-entry">
+        <div class="media-outlet">New York Times</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.nytimes.com/2026/05/04/us/did-school-cellphone-bans-study.html">Did School Cellphone Bans Work? New Study Finds Mixed Results</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Washington Post</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.washingtonpost.com/education/2026/05/04/cell-phone-bans-impact-study/">School cellphone bans don't affect test scores or attendance, study finds</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Scientific American</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.scientificamerican.com/article/school-cell-phone-bans-may-boost-student-well-being-but-not-test-scores-new-study-suggests/">School cell phone bans may boost student well-being—but not test scores, new study suggests</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">NPR</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.npr.org/2026/05/04/nx-s1-5810191/what-actually-happens-when-schools-take-away-students-phones">What actually happens when schools take away students' phones?</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Education Week</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.edweek.org/technology/do-student-cellphone-bans-improve-academic-achievement/2026/05">Do Student Cellphone Bans Improve Academic Achievement?</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">The 74</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.the74million.org/article/five-things-to-know-about-largest-cell-phone-ban-study/">Five Things to Know About Largest Cell Phone Ban Study</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 4, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">CNN</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://archive.org/embed/CNNW_20260505_120000_CNN_News_Central?start=3085&end=3311.2">Study Finds School Cell Phone Bans Yield Mixed Results</a></div>
+          <div class="media-context">Re: The Effects of School Phone Bans &nbsp;·&nbsp; May 5, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">The 74</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.the74million.org/article/3rd-grade-retention-isnt-really-about-kids-its-about-adults-who-teach-them/">3rd grade retention isn't really about the kids — it's about adults who teach them</a></div>
+          <div class="media-context">Re: Assessing the Impact of Grade Retention &nbsp;·&nbsp; May 12, 2026</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">New York Times</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.nytimes.com/2026/01/11/us/mississippi-schools-transformation.html">Mississippi Schools Transformation</a></div>
+          <div class="media-context">Re: Assessing the Impact of Grade Retention &nbsp;·&nbsp; January 11, 2026</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- ══ 2025 ══ -->
+  <div class="year-group">
+    <div class="year-label">2025</div>
+    <ul class="media-list">
+
+      <li class="media-entry">
+        <div class="media-outlet">Education Week</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.edweek.org/teaching-learning/is-3rd-grade-retention-the-secret-to-better-reading-outcomes-or-something-else/2025/05">Is 3rd-Grade Retention the Secret to Better Reading Outcomes?</a></div>
+          <div class="media-context">Re: Assessing the Impact of Grade Retention &nbsp;·&nbsp; May 2025</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Annenberg Institute</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://edworkingpapers.com/policy-practice-series/ai25-1188">Policy Brief: Assessing the Impact of Grade Retention</a></div>
+          <div class="media-context">Re: Assessing the Impact of Grade Retention &nbsp;·&nbsp; 2025</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Cato Institute</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.cato.org/research-briefs-economic-policy/impacts-grade-retention-policy-minimal-retention">Research Brief: Impacts of Grade Retention Policy — Minimal Retention</a></div>
+          <div class="media-context">Re: Assessing the Impact of Grade Retention &nbsp;·&nbsp; 2025</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- ══ 2024 ══ -->
+  <div class="year-group">
+    <div class="year-label">2024</div>
+    <ul class="media-list">
+
+      <li class="media-entry">
+        <div class="media-outlet">Phys.org</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://phys.org/news/2024-08-transitional-kindergarten-early-access-boost.html">Transitional kindergarten: Early access boost</a></div>
+          <div class="media-context">Re: Impacts of Michigan Transitional Kindergarten &nbsp;·&nbsp; August 2024</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">MSN</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.msn.com/en-us/money/careers/transitional-kindergarten-programs-expand-early-education-access-and-boost-academic-gain-study-finds/ar-AA1oVNyC">Transitional Kindergarten programs expand early education access and boost academic gain, study finds</a></div>
+          <div class="media-context">Re: Impacts of Michigan Transitional Kindergarten &nbsp;·&nbsp; August 16, 2024</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Fordham Institute</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://fordhaminstitute.org/national/commentary/early-childhood-education-matters-transitional-kindergarten-feasible-option">Early childhood education matters: Transitional kindergarten is a feasible option</a></div>
+          <div class="media-context">Re: Impacts of Michigan Transitional Kindergarten &nbsp;·&nbsp; 2024</div>
+        </div>
+      </li>
+
+      <li class="media-entry">
+        <div class="media-outlet">Bridge Magazine</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.bridgemi.com/guest-commentary/opinion-transitional-kindergarten-offers-lessons-michigan-early-learning">Transitional kindergarten offers lessons for Michigan early learning investments</a></div>
+          <div class="media-context">Op-ed with Christina Weiland &nbsp;·&nbsp; June 25, 2024</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- ══ 2022 ══ -->
+  <div class="year-group">
+    <div class="year-label">2022</div>
+    <ul class="media-list">
+
+      <li class="media-entry">
+        <div class="media-outlet">Vox</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.vox.com/future-perfect/23277830/covid-cash-transfers-money-global-inequality">Coverage of COVID Cash Transfer Research</a></div>
+          <div class="media-context">Re: The COVID Cash Transfer Study &nbsp;·&nbsp; July 9, 2022</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+  <!-- ══ 2021 ══ -->
+  <div class="year-group">
+    <div class="year-label">2021</div>
+    <ul class="media-list">
+
+      <li class="media-entry">
+        <div class="media-outlet">Detroit News</div>
+        <div class="media-right">
+          <div class="media-title"><a href="https://www.detroitnews.com/story/news/education/2021/10/26/transitional-developmental-kindergarten-michigan-growth-two-years/6018774001/">New kind of kindergarten gains momentum in Michigan</a></div>
+          <div class="media-context">Re: Transitional Kindergarten research &nbsp;·&nbsp; October 25, 2021</div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    Brian A. Jacob &nbsp;·&nbsp; Gerald R. Ford School of Public Policy, University of Michigan
+  </div>
+</footer>
+
+</body>
+</html>

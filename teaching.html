@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching — Brian A. Jacob</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1a2744;
+    --link: #8b1a1a;
+    --text: #1c1c1c;
+    --muted: #555;
+    --border: #d8d0c4;
+    --bg: #faf8f4;
+    --section-bg: #f3f0ea;
+  }
+  body { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; color: var(--text); background: var(--bg); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  nav { border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 860px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-name { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-decoration: none; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+
+  .page-title { padding: 3rem 0 2rem; border-bottom: 1px solid var(--border); }
+  .page-title h1 { font-family: 'EB Garamond', serif; font-size: 2rem; font-weight: 400; color: var(--navy); }
+
+  /* Course entries */
+  .course { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+  .course:last-child { border-bottom: none; }
+
+  .course-header { margin-bottom: 1rem; }
+  .course-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.3rem;
+  }
+  .course-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--navy);
+    line-height: 1.3;
+  }
+  .course-tag {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    padding: 0.15rem 0.55rem;
+    margin-top: 0.4rem;
+  }
+
+  .course-body p {
+    margin-bottom: 0.85rem;
+    font-size: 1rem;
+  }
+  .course-body p:last-child { margin-bottom: 0; }
+
+  .course-meta {
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.76rem;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 2rem;
+    line-height: 1.7;
+  }
+  .course-meta span strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  footer { border-top: 1px solid var(--border); margin-top: 4rem; padding: 2rem 0; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.74rem; color: var(--muted); letter-spacing: 0.03em; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brian A. Jacob</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html" class="active">Teaching</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+
+  <div class="page-title">
+    <h1>Teaching</h1>
+  </div>
+
+  <!-- ══ PUBPOL 639 ══ -->
+  <article class="course">
+    <div class="course-header">
+      <div class="course-number">PubPol 639</div>
+      <div class="course-title">Program Evaluation</div>
+      <div class="course-tag">Required &mdash; MPP</div>
+    </div>
+
+    <div class="course-body">
+      <p>Program evaluation is the field of study designed to estimate the efficacy of a program, policy, or intervention. This course aims to equip students with the statistical tools and reasoning necessary to (1) be a critical consumer of empirical research and (2) thoughtfully design and execute their own analysis.</p>
+
+      <p>The course is divided into three parts. In Part I, we develop the core analytic tool of linear regression, covering single and multi-variable regression models, hypothesis testing, dummy variables, heteroskedasticity, model fit, multicollinearity, joint hypothesis testing, log models, interaction terms, and binary dependent variable models. In Part II, we discuss causal inference as distinct from statistical inference and contrast evidence from observational data with that from randomized trials. This section covers the design, implementation, and analysis of RCTs, including methods for learning from experiments with partial compliance. Part III introduces fixed effects and panel data, as well as quasi-experimental methods such as differences-in-differences, event study, and regression discontinuity.</p>
+
+      <p>Classes include a mix of lecture, small-group discussion, and practice working problems, with each class focusing on real-world policy examples as a vehicle to understand the material. The main text is <a href="https://www.pearson.com/en-us/subject-catalog/p/introduction-to-econometrics/P200000006421"><em>Introduction to Econometrics</em></a> by Stock and Watson, supplemented by <a href="https://press.princeton.edu/books/paperback/9780691152844/mastering-metrics"><em>Mastering 'Metrics: The Path from Cause to Effect</em></a> by Angrist and Pischke. We also read empirical studies in areas such as education, health care, international development, and criminal justice reform.</p>
+    </div>
+
+    <div class="course-meta">
+      <span><strong>Assessment</strong> &nbsp; 8 problem sets, two in-class quizzes, midterm exam, final exam</span>
+      <span><strong>Software</strong> &nbsp; Stata or R</span>
+      <span><strong>Prerequisites</strong> &nbsp; PubPol 529 or equivalent introductory statistics course</span>
+    </div>
+  </article>
+
+  <!-- Additional courses will be added here -->
+
+</main>
+
+<footer>
+  <div class="container">
+    Brian A. Jacob &nbsp;·&nbsp; Gerald R. Ford School of Public Policy, University of Michigan
+  </div>
+</footer>
+
+</body>
+</html>

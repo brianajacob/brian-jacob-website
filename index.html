@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brian A. Jacob</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #1a2744;
+    --link: #8b1a1a;
+    --text: #1c1c1c;
+    --muted: #555;
+    --border: #d8d0c4;
+    --bg: #faf8f4;
+    --section-bg: #f3f0ea;
+  }
+  body { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; color: var(--text); background: var(--bg); }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  nav { border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
+  .nav-inner { max-width: 860px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  .nav-name { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.15s; }
+  .nav-links a:hover, .nav-links a.active { color: var(--navy); }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
+  .bio-section { padding: 4rem 0 3rem; display: grid; grid-template-columns: 1fr 200px; gap: 3rem; align-items: start; }
+  .bio-text h1 { font-family: 'EB Garamond', serif; font-size: 2.4rem; font-weight: 400; color: var(--navy); line-height: 1.2; margin-bottom: 1.2rem; }
+  .bio-text p { color: #333; margin-bottom: 0.9rem; font-size: 1.02rem; }
+  .bio-text p:last-child { margin-bottom: 0; }
+  .bio-photo { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+  .contact-links { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-align: center; line-height: 2.1; }
+  .contact-links a { display: block; }
+  hr.section-rule { border: none; border-top: 1px solid var(--border); margin: 0.5rem 0; }
+  .section-header { display: flex; justify-content: space-between; align-items: baseline; margin: 2.5rem 0 1.4rem; }
+  .section-header h2 { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); }
+  .see-all { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; }
+  .paper-list { list-style: none; }
+  .paper-entry { padding: 1.3rem 0; border-bottom: 1px solid var(--border); }
+  .paper-entry:first-child { border-top: 1px solid var(--border); }
+  .paper-title { font-family: 'EB Garamond', serif; font-size: 1.05rem; font-weight: 500; color: var(--navy); line-height: 1.4; }
+  .paper-meta { font-family: 'Inter', sans-serif; font-size: 0.78rem; color: var(--muted); margin-top: 0.3rem; line-height: 1.55; }
+  .paper-coverage { font-family: 'Inter', sans-serif; font-size: 0.74rem; color: #444; margin-top: 0.5rem; line-height: 1.85; }
+  .paper-coverage .coverage-label { font-weight: 500; color: #333; margin-right: 0.3rem; }
+  .paper-coverage a { color: #5a6e2e; }
+  .paper-coverage a:hover { text-decoration: underline; }
+  .coverage-sep { color: #aaa; margin: 0 0.35rem; }
+  .op-ed-label { font-style: italic; color: #666; font-size: 0.7rem; margin-left: 0.15rem; }
+  footer { border-top: 1px solid var(--border); margin-top: 4rem; padding: 2rem 0; text-align: center; font-family: 'Inter', sans-serif; font-size: 0.74rem; color: var(--muted); letter-spacing: 0.03em; }
+  @media (max-width: 640px) { .bio-section { grid-template-columns: 1fr; } .bio-photo { flex-direction: row; align-items: flex-start; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="nav-name" href="index.html">Brian A. Jacob</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="teaching.html">Teaching</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="container">
+
+  <section class="bio-section">
+    <div class="bio-text">
+      <h1>Brian A. Jacob</h1>
+      <p>
+        I am the Walter H. Annenberg Professor of Education Policy and Professor of Economics
+        at the <a href="https://fordschool.umich.edu">Gerald R. Ford School of Public Policy</a>
+        at the University of Michigan, where I serve as the Associate Dean for Research and Policy Engagement.
+        I am co-director of the <a href="https://youthpolicylab.umich.edu">Youth Policy Lab</a>
+        and a Research Associate at the <a href="https://www.nber.org">National Bureau of Economic Research</a>.
+      </p>
+      <p>
+        My research focuses on the economics of education, with work spanning early childhood
+        education to college. I am motivated by the desire to identify policies with the ability
+        to improve outcomes for all children and increase economic mobility for young people from
+        disadvantaged backgrounds.
+      </p>
+      <p style="margin-top:1rem; font-family:'Inter',sans-serif; font-size:0.82rem; color:var(--muted);">
+        bajacob@umich.edu &nbsp;·&nbsp; Ann Arbor, Michigan
+      </p>
+    </div>
+    <div class="bio-photo">
+      <img src="jacob-brian-profile-pic.jpg" alt="Brian A. Jacob" width="180" style="border: 1px solid var(--border);">
+      <div class="contact-links">
+        <a href="cv.pdf">CV (PDF)</a>
+        <a href="https://scholar.google.com/citations?user=inP8hCIAAAAJ">Google Scholar</a>
+        <a href="https://www.nber.org/people/brian_jacob">NBER Profile</a>
+      </div>
+    </div>
+  </section>
+
+  <hr class="section-rule">
+
+  <div class="section-header">
+    <h2>Recent Research</h2>
+    <a class="see-all" href="research.html">All Papers →</a>
+  </div>
+
+  <ul class="paper-list">
+
+    <li class="paper-entry">
+      <div class="paper-title">
+        <a href="https://www.nber.org/papers/w35132">The Effects of School Phone Bans: National Evidence from Lockable Pouches</a>
+      </div>
+      <div class="paper-meta">
+        With Hunt Allcott, E. Jason Baron, Thomas Dee, Angela L. Duckworth and Matthew Gentzkow
+        &nbsp;·&nbsp; NBER Working Paper 35132, 2026
+      </div>
+      <div class="paper-coverage">
+        <span class="coverage-label">Coverage:</span>
+        <a href="https://www.nytimes.com/2026/05/04/us/did-school-cellphone-bans-study.html">New York Times</a><span class="coverage-sep">·</span>
+        <a href="https://www.washingtonpost.com/education/2026/05/04/cell-phone-bans-impact-study/">Washington Post</a><span class="coverage-sep">·</span>
+        <a href="https://www.scientificamerican.com/article/school-cell-phone-bans-may-boost-student-well-being-but-not-test-scores-new-study-suggests/">Scientific American</a><span class="coverage-sep">·</span>
+        <a href="https://www.npr.org/2026/05/04/nx-s1-5810191/what-actually-happens-when-schools-take-away-students-phones">NPR</a><span class="coverage-sep">·</span>
+        <a href="https://www.edweek.org/technology/do-student-cellphone-bans-improve-academic-achievement/2026/05">Education Week</a><span class="coverage-sep">·</span>
+        <a href="https://www.the74million.org/article/five-things-to-know-about-largest-cell-phone-ban-study/">The 74</a><span class="coverage-sep">·</span>
+        <a href="https://archive.org/embed/CNNW_20260505_120000_CNN_News_Central?start=3085&end=3311.2">CNN</a>
+      </div>
+    </li>
+
+    <li class="paper-entry">
+      <div class="paper-title">
+        <a href="https://doi.org/10.1093/chidev/aacag075">Impacts of Michigan Transitional Kindergarten through Third Grade</a>
+      </div>
+      <div class="paper-meta">
+        With J. Berne, K.C. Garcia, T. Musaddiq, A. Shapiro and C. Weiland
+        &nbsp;·&nbsp; <em>Child Development</em>, 2026
+      </div>
+      <div class="paper-coverage">
+        <span class="coverage-label">Coverage:</span>
+        <a href="https://phys.org/news/2024-08-transitional-kindergarten-early-access-boost.html">Phys.org</a><span class="coverage-sep">·</span>
+        <a href="https://fordhaminstitute.org/national/commentary/early-childhood-education-matters-transitional-kindergarten-feasible-option">Fordham Institute</a><span class="coverage-sep">·</span>
+        <a href="https://www.msn.com/en-us/money/careers/transitional-kindergarten-programs-expand-early-education-access-and-boost-academic-gain-study-finds/ar-AA1oVNyC">MSN</a><span class="coverage-sep">·</span>
+        <a href="https://www.detroitnews.com/story/news/education/2021/10/26/transitional-developmental-kindergarten-michigan-growth-two-years/6018774001/">Detroit News</a>
+        <br><span class="coverage-label">Op-ed:</span>
+        <a href="https://www.bridgemi.com/guest-commentary/opinion-transitional-kindergarten-offers-lessons-michigan-early-learning">Bridge Magazine</a><span class="op-ed-label">(with Christina Weiland)</span>
+      </div>
+    </li>
+
+    <li class="paper-entry">
+      <div class="paper-title">
+        <a href="https://doi.org/10.1016/j.jpubeco.2025.105253">Assessing the Impact of Grade Retention: A Cautionary Tale of Exclusion Restriction Violations</a>
+      </div>
+      <div class="paper-meta">
+        With J. Berne, C. Weiland and K. Strunk
+        &nbsp;·&nbsp; <em>Journal of Public Economics</em>, 253, 2026
+      </div>
+      <div class="paper-coverage">
+        <span class="coverage-label">Coverage:</span>
+        <a href="https://edworkingpapers.com/policy-practice-series/ai25-1188">Annenberg Institute</a><span class="coverage-sep">·</span>
+        <a href="https://www.edweek.org/teaching-learning/is-3rd-grade-retention-the-secret-to-better-reading-outcomes-or-something-else/2025/05">Education Week</a><span class="coverage-sep">·</span>
+        <a href="https://www.cato.org/research-briefs-economic-policy/impacts-grade-retention-policy-minimal-retention">Cato Institute</a><span class="coverage-sep">·</span>
+        <a href="https://www.nytimes.com/2026/01/11/us/mississippi-schools-transformation.html">New York Times</a><span class="coverage-sep">·</span>
+        <a href="https://www.the74million.org/article/3rd-grade-retention-isnt-really-about-kids-its-about-adults-who-teach-them/">The 74</a>
+      </div>
+    </li>
+
+  </ul>
+
+</main>
+
+<footer>
+  <div class="container">
+    Brian A. Jacob &nbsp;·&nbsp; Gerald R. Ford School of Public Policy, University of Michigan
+  </div>
+</footer>
+
+</body>
+</html>
