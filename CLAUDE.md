@@ -37,7 +37,8 @@ At the end of each session when asked, append a summary to `session_log.md` reco
 
 ## Current Status
 - HTML pages complete: index.html, research.html, teaching.html, media.html
-- CV docx present, needs conversion to PDF
-- Profile photo not yet added
-- GitHub repository not yet created
+- cv.pdf generated from Jacob_Brian_CV2026_final.docx ✓
+- Profile photo wired up (jacob-brian-profile-pic.jpg) ✓
+- GitHub repository created: https://github.com/brianajacob/brian-jacob-website ✓
+- Files pushed to GitHub repository ✓
 - Custom domain not yet configured
