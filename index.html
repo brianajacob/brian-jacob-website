@@ -13,21 +13,21 @@
     --link: #8b1a1a;
     --text: #1c1c1c;
     --muted: #555;
-    --border: #d8d0c4;
-    --bg: #faf8f4;
-    --section-bg: #f3f0ea;
+    --border: #e0e0e0;
+    --bg: #ffffff;
+    --section-bg: #f5f5f5;
   }
-  body { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; color: var(--text); background: var(--bg); }
+  body { font-family: 'EB Garamond', Georgia, serif; font-size: 18px; line-height: 1.7; color: var(--text); background: #ffffff; }
   a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   nav { border-bottom: 1px solid var(--border); background: var(--bg); position: sticky; top: 0; z-index: 100; }
   .nav-inner { max-width: 860px; margin: 0 auto; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
-  .nav-name { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); text-decoration: none; }
+  .nav-name { font-family: 'EB Garamond', serif; font-size: 1.7rem; font-weight: 500; color: var(--navy); text-decoration: none; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { font-family: 'Inter', sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-decoration: none; transition: color 0.15s; }
   .nav-links a:hover, .nav-links a.active { color: var(--navy); }
   .container { max-width: 860px; margin: 0 auto; padding: 0 2rem; }
-  .bio-section { padding: 4rem 0 3rem; display: grid; grid-template-columns: 1fr 200px; gap: 3rem; align-items: start; }
+  .bio-section { padding: 3rem 0 1.2rem; display: grid; grid-template-columns: 1fr 160px; gap: 2.5rem; align-items: start; }
   .bio-text h1 { font-family: 'EB Garamond', serif; font-size: 2.4rem; font-weight: 400; color: var(--navy); line-height: 1.2; margin-bottom: 1.2rem; }
   .bio-text p { color: #333; margin-bottom: 0.9rem; font-size: 1.02rem; }
   .bio-text p:last-child { margin-bottom: 0; }
@@ -35,7 +35,7 @@
   .contact-links { font-family: 'Inter', sans-serif; font-size: 0.78rem; text-align: center; line-height: 2.1; }
   .contact-links a { display: block; }
   hr.section-rule { border: none; border-top: 1px solid var(--border); margin: 0.5rem 0; }
-  .section-header { display: flex; justify-content: space-between; align-items: baseline; margin: 2.5rem 0 1.4rem; }
+  .section-header { display: flex; justify-content: space-between; align-items: baseline; margin: 1.2rem 0 1.4rem; }
   .section-header h2 { font-family: 'EB Garamond', serif; font-size: 1.45rem; font-weight: 500; color: var(--navy); }
   .see-all { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.07em; text-transform: uppercase; }
   .paper-list { list-style: none; }
@@ -71,7 +71,6 @@
 
   <section class="bio-section">
     <div class="bio-text">
-      <h1>Brian A. Jacob</h1>
       <p>
         I am the Walter H. Annenberg Professor of Education Policy and Professor of Economics
         at the <a href="https://fordschool.umich.edu">Gerald R. Ford School of Public Policy</a>
@@ -85,16 +84,15 @@
         to improve outcomes for all children and increase economic mobility for young people from
         disadvantaged backgrounds.
       </p>
-      <p style="margin-top:1rem; font-family:'Inter',sans-serif; font-size:0.82rem; color:var(--muted);">
-        bajacob@umich.edu &nbsp;·&nbsp; Ann Arbor, Michigan
-      </p>
+
     </div>
     <div class="bio-photo">
-      <img src="jacob-brian-profile-pic.jpg" alt="Brian A. Jacob" width="180" style="border: 1px solid var(--border);">
+      <img src="jacob-brian-profile-pic.jpg" alt="Brian A. Jacob" width="155" style="border: 1px solid var(--border);">
       <div class="contact-links">
         <a href="cv.pdf">CV (PDF)</a>
         <a href="https://scholar.google.com/citations?user=inP8hCIAAAAJ">Google Scholar</a>
         <a href="https://www.nber.org/people/brian_jacob">NBER Profile</a>
+        <a href="mailto:bajacob@umich.edu">bajacob@umich.edu</a>
       </div>
     </div>
   </section>
@@ -103,7 +101,6 @@
 
   <div class="section-header">
     <h2>Recent Research</h2>
-    <a class="see-all" href="research.html">All Papers →</a>
   </div>
 
   <ul class="paper-list">
