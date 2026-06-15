@@ -61,6 +61,27 @@
     .bio-photo { flex-direction: column; align-items: center; }
     .section-header h2 { font-size: 1.2rem; }
   }
+
+.abstract-toggle {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.78rem;
+  color: var(--link);
+  cursor: pointer;
+  text-decoration: none;
+}
+.abstract-toggle:hover {
+  text-decoration: underline;
+}
+.abstract-content {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  padding: 0.5rem 0.75rem;
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  border-left: 2px solid var(--border);
+}
 </style>
 </head>
 <body>
@@ -123,8 +144,9 @@
       </div>
       <div class="paper-meta">
         With Hunt Allcott, E. Jason Baron, Thomas Dee, Angela L. Duckworth and Matthew Gentzkow
-        &nbsp;·&nbsp; NBER Working Paper 35132, 2026
+        &nbsp;·&nbsp; NBER Working Paper 35132, 2026&nbsp;·&nbsp; <a href="#" class="abstract-toggle" data-target="abs-1">[+] Abstract</a>
       </div>
+      <div class="abstract-content" id="abs-1" hidden>Schools across the U.S. have sharply restricted student use of phones during the school day. We evaluate one type of restriction—lockable phone pouches—using nationwide data combining large-scale surveys, GPS pings, standardized test scores, and school administrative records, along with sales records from the largest pouch provider. Using a staggered difference-in-differences design, we find that pouch adoption substantially reduces phone use as measured by GPS pings and teacher reports. In the first year after adoption, disciplinary incidents increase and student subjective well-being falls, consistent with short-term disruption. However, effects on well-being become positive in later years and disciplinary effects fade. For academic achievement, average effects on test scores are consistently close to zero. High schools see modest positive effects, particularly in math, while middle schools see small negative effects. We find little evidence of effects on school attendance, self-reported classroom attention, or perceived online bullying.</div>
       <div class="paper-coverage">
         <span class="coverage-label">Coverage:</span>
         <a href="https://www.nytimes.com/2026/05/04/us/did-school-cellphone-bans-study.html">New York Times</a><span class="coverage-sep">·</span>
@@ -143,8 +165,9 @@
       </div>
       <div class="paper-meta">
         With J. Berne, K.C. Garcia, T. Musaddiq, A. Shapiro and C. Weiland
-        &nbsp;·&nbsp; <em>Child Development</em>, 2026
+        &nbsp;·&nbsp; <em>Child Development</em>, 2026&nbsp;·&nbsp; <a href="#" class="abstract-toggle" data-target="abs-2">[+] Abstract</a>
       </div>
+      <div class="abstract-content" id="abs-2" hidden>Transitional Kindergarten (TK) is a relatively new and under-researched model of early childhood education. Using data from Michigan TK, this study examines impacts for children (50% female, 78% White, 9% Black, 7% Hispanic) who enrolled at age 4 in 2014–2015 and 2018–2019 using a regression discontinuity design. Michigan TK improved kindergarten readiness (0.9 SD, N = 1,943) and third-grade math scores (0.2–0.3 SD, N = 15,680). It had no impact on ever being placed in special education from kindergarten through second grade, but it did cause earlier entry into special education in kindergarten (N = 15,704). Our findings add to the larger evidence base on early education programs and contribute substantially to the evidence base on TK specifically.</div>
       <div class="paper-coverage">
         <span class="coverage-label">Coverage:</span>
         <a href="https://phys.org/news/2024-08-transitional-kindergarten-early-access-boost.html">Phys.org</a><span class="coverage-sep">·</span>
@@ -162,8 +185,9 @@
       </div>
       <div class="paper-meta">
         With J. Berne, C. Weiland and K. Strunk
-        &nbsp;·&nbsp; <em>Journal of Public Economics</em>, 253, 2026
+        &nbsp;·&nbsp; <em>Journal of Public Economics</em>, 253, 2026&nbsp;·&nbsp; <a href="#" class="abstract-toggle" data-target="abs-3">[+] Abstract</a>
       </div>
+      <div class="abstract-content" id="abs-3" hidden>State laws that mandate in-grade retention for struggling readers are widespread in the U.S., and retention at the secondary school level is common in many countries. Researchers often use regression discontinuity (RD) methods to study such policies, leveraging strict performance cutoffs as an instrument to estimate the Local Average Treatment Effect (LATE) of retention on student achievement. In this paper, we document a likely threat to the internal validity of these studies. Examining two cohorts of Michigan students, we find that being flagged for retention increases reading performance by roughly 0.05 SD, a modest but meaningful impact. However, because being flagged increases the likelihood of actually being retained by only 3.4 percentage points, the implied effect of retention itself under standard assumptions would be an implausibly large 1.3 SD. Survey evidence suggests that flagged students receive more intensive reading support even if they are not retained, a violation of the exclusion restriction. Moreover, we estimate similar effects in districts that did not retain any students. These results raise concerns about potential bias in previously estimated retention effects and highlight the importance of carefully considering exclusion assumptions in analyses of multifaceted education interventions.</div>
       <div class="paper-coverage">
         <span class="coverage-label">Coverage:</span>
         <a href="https://edworkingpapers.com/policy-practice-series/ai25-1188">Annenberg Institute</a><span class="coverage-sep">·</span>
@@ -184,5 +208,21 @@
   </div>
 </footer>
 
+<script>
+document.querySelectorAll('.abstract-toggle').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    var targetId = this.getAttribute('data-target');
+    var target = document.getElementById(targetId);
+    if (target.hasAttribute('hidden')) {
+      target.removeAttribute('hidden');
+      this.textContent = '[-] Abstract';
+    } else {
+      target.setAttribute('hidden', '');
+      this.textContent = '[+] Abstract';
+    }
+  });
+});
+</script>
 </body>
 </html>
